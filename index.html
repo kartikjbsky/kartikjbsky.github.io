@@ -45,6 +45,20 @@
         margin: 2px 0;
       }
     }
+
+  .banner {
+  background-size: cover; /* Cover ensures the image covers the container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
+@media (max-width: 768px) {
+.banner {
+    background-position: center center; /* Ensures the image is centered on smaller screens */
+  }
+}
+
+    
   </style>
 
 
@@ -248,7 +262,7 @@
   <section>
     <div class="container">
       <div class="banner rounded-4 p-5"
-        style="background-image: url(images/space_banner.jpg); background-size: cover ; background-repeat: fixed; background-position: center; align-self:center;">
+        style="background-image: url(images/space_banner.jpg); background-size: cover ; background-repeat: fixed; background-position: center; lign-self: center; padding: 5rem;">
         <div class="text-content text-white py-5 my-5  flex-direction:column;">
           <p class="fs-4">
             Educator / Masters Student / Astrophysics Enthusiast
