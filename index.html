@@ -25,8 +25,8 @@
   <!--style sheet-->
   <link rel="stylesheet" href="css/style.css">
 
-   <style>
-    /* Custom styles for better responsiveness */
+   <!--<style>
+       /* Custom styles for better responsiveness */
        h1 {font-size: 10vw; /*adjusts based on 10% of the viewport width*/
 
       }
@@ -59,9 +59,61 @@
 .banner {
     background-position: center center; /* Ensures the image is centered on smaller screens */
   }
-}
+}   
 
     
+  </style> -->
+
+  <style>
+    /* Responsive Font Size */
+h1 {
+  font-size: min(10vw, 50px); /* Max 50px, scales with viewport */
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* Responsive Container */
+.responsive-container {
+  padding: 15px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: min(8vw, 40px);
+  }
+
+  .responsive-container {
+    padding: 10px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: min(7vw, 35px);
+  }
+
+  .responsive-container {
+    padding: 5px;
+    margin: 2px 0;
+  }
+}
+
+/* Background Image Fix */
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Ensure it fills the viewport */
+}
+
+@media (max-width: 768px) {
+  .banner {
+    background-position: center center;
+  }
+}
+
   </style>
 
 
