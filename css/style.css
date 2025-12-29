@@ -246,4 +246,17 @@ a:hover {
     color: var(--bs-pagination-active-color);
     background-color: var(--bs-pagination-active-bg);
     border-color: var(--bs-pagination-active-border-color);
+
+}
+
+.bg-green {
+    background-color: #4ba1a7; /* or your preferred green */
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4dbd6; /* your accent color */
 }
