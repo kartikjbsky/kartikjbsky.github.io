@@ -182,139 +182,82 @@ h1 {
     </symbol>
   </svg>
 
+  <!-- Fixed Navbar Section -->
   <header id="top" class="position-sticky top-0 start-0" style="z-index:10;">
-    <nav class="navbar bg-green fixed-top">
-      <div class="container-fluid">
-        <div class="d-flex align-items-center g-4">
-          <a class="navbar-brand d-flex" href="index.html">
-            <img src="images/my_logo.png" class="img-fluid" id="logo" width="300" height="200">
-          </a>
-          <div class="icon px-5">
-            <a href="#" class="text-decoration-none">
-              <svg class="skype" width="24" height="24">
-                <use xlink:href="#skype"></use>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/n.ever.ending.story?igsh=YzljYTk1ODg3Zg==" class="text-decoration-none">
-              <svg class="instagarm" width="32" height="32">
-                <use xlink:href="#instagram"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="telegram" width="24" height="24">
-                <use xlink:href="#telegram"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="tumblr" width="24" height="24">
-                <use xlink:href="#tumblr"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="twitter" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="whatsapp" width="24" height="24">
-                <use xlink:href="#whatsapp"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="github" width="24" height="24">
-                <use xlink:href="#github"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="facebook" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="messenger" width="24" height="24">
-                <use xlink:href="#messenger"></use>
-              </svg>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <svg class="behance" width="24" height="24">
-                <use xlink:href="#behance"></use>
-              </svg>
-            </a>
+      <nav class="navbar bg-green fixed-top">
+          <div class="container-fluid">
+              <div class="d-flex align-items-center g-4">
+                  <a class="navbar-brand d-flex" href="index.html">
+                      <img src="images/my_logo.png" class="img-fluid" id="logo" width="300" height="200" alt="Logo">
+                  </a>
+                  <div class="icon px-5">
+                      <a href="#" class="text-decoration-none">
+                          <svg class="skype" width="24" height="24">
+                              <use xlink:href="#skype"></use>
+                          </svg>
+                      </a>
+                      <a href="https://www.instagram.com/n.ever.ending.story?igsh=YzljYTk1ODg3Zg==" class="text-decoration-none">
+                          <svg class="instagram" width="32" height="32">
+                              <use xlink:href="#instagram"></use>
+                          </svg>
+                      </a>
+                      <a href="#" class="text-decoration-none">
+                          <svg class="telegram" width="24" height="24">
+                              <use xlink:href="#telegram"></use>
+                          </svg>
+                      </a>
+                  </div>
+              </div>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon">
+                      <svg class="text-primary menu" width="32" height="32">
+                          <use xlink:href="#menu"></use>
+                      </svg>
+                  </span>
+              </button>
+              <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                              <a class="nav-link active text-uppercase ls-4 text-white" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="single-portfolio.html">Single Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="singlepost.html">Single Post</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="styles.html">Styles</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="blog.html">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="team.html">Team</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase ls-4 text-white" href="contact.html">Contact</a>
+                          </li>
+                          <li class="nav-item mt-4">
+                              <a class="btn btn-outline-light rounded-0 text-uppercase ls-4" href="https://docs.google.com/forms/d/e/1FAIpQLSfZnK5NbjluMtSkNboFPP4gaEWissOghT3aTEFDJBW0IKwS7g/viewform?usp=sf_link">Let me know about yourself</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
           </div>
-        </div>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navabar-toggler-icon">
-            <svg class="text-primary menu" width="32" height="32">
-              <use xlink:href="#menu"></use>
-            </svg>
-          </span>
-        </button>
-        <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close btn-close-white ms-3" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav flex-grow-1 p-4">
-              <li class="nav-item">
-                <a class="nav-link active text-uppercase ls-4 text-white" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="portfolio.html">Portfolio <span
-                  class="badge bg-primary"
-                  ></span>
-                </a>
-              </li>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="single-portfolio.html">Single Portfolio <span
-                  class="badge bg-primary"
-                  ></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="singlepost.html">Single Post<span
-                  class="badge bg-primary"
-                  ></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="styles.html">Styles <span
-                  class="badge bg-primary"
-                  ></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="blog.html">Blog <span
-                  class="badge bg-primary"
-                  ></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="team.html">Team <span
-                  class="badge bg-primary"
-                  ></span
-                >
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase ls-4 text-white" aria-current="page" href="contact.html">Contact <span
-                  class="badge bg-primary"
-                  ></span
-                >
-                </a>
-              </li>
-              <li class="nav-item mt-4">
-                <a class="btn btn-outline-light rounded-0 text-uppercase ls-4" aria-current="page" href="https://docs.google.com/forms/d/e/1FAIpQLSfZnK5NbjluMtSkNboFPP4gaEWissOghT3aTEFDJBW0IKwS7g/viewform?usp=sf_link">Let me know about yourself</a>
-              </li>
-            </ul>
-          </div> 
-        </div>
-      </div>
-    </nav>
-
+      </nav>
   </header>
+
+  
 
   <section>
     <div class="container">
